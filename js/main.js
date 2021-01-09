@@ -18,7 +18,7 @@ async function getData() {
 
   try {
     let response = await fetch(
-      `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&lang=se&appid=3d8d2b2fa2b695d5367f55ec5c3000ab`
+      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&lang=se&appid=3d8d2b2fa2b695d5367f55ec5c3000ab`
     );
     let data = await response.json();
 
