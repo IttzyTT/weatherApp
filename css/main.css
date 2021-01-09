@@ -40,14 +40,13 @@ p::first-letter {
 #mainContainer {
   display: flex;
   justify-content: center;
-  margin-top: 100px;
 }
 
 #content {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 3.5rem;
+  margin-top: 10rem;
 }
 
 /* Upper */
