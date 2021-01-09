@@ -65,30 +65,30 @@ async function getData() {
   }
 }
 
-async function getforecastData() {
-  let position = await getLocation();
-  long = position.coords.longitude;
-  lat = position.coords.latitude;
+// async function getforecastData() {
+//   let position = await getLocation();
+//   long = position.coords.longitude;
+//   lat = position.coords.latitude;
 
-  try {
-    let forecastResponse = await fetch(
-      `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&units=metric&lang=se&cnt=5&appid=3d8d2b2fa2b695d5367f55ec5c3000ab`
-    );
-    let forecastData = await forecastResponse.json();
+//   try {
+//     let forecastResponse = await fetch(
+//       `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&units=metric&lang=se&cnt=5&appid=3d8d2b2fa2b695d5367f55ec5c3000ab`
+//     );
+//     let forecastData = await forecastResponse.json();
 
-    let forcastHTML = '';
-    for (let forcast of forecastData.list) {
-      console.log(forcast);
-    }
-  } catch (error) {}
-  errorTxt.innerText = 'Somthing went wront, please try agian';
-}
+//     let forcastHTML = '';
+//     for (let forcast of forecastData.list) {
+//       console.log(forcast);
+//     }
+//   } catch (error) {}
+//   errorTxt.innerText = 'Somthing went wront, please try agian';
+// }
 
 // // Both functions
 function allFunctions() {
   getLocation();
   getData();
-  getforecastData();
+  // getforecastData();
 }
 
 window.onload = allFunctions;
