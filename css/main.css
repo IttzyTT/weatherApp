@@ -3,56 +3,97 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  font-size: 12px;
+}
 
 body {
   height: 100vh;
-  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
   color: whitesmoke;
   font-family: 'poppins', sans-serif;
 }
 
+#preloader {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#preloader img {
+  margin-top: 100px;
+  width: 200px;
+}
+#error-txt {
+  color: black;
+  z-index: 11;
+}
+p::first-letter {
+  text-transform: capitalize;
+}
+
 /* Main */
 #mainContainer {
-  width: 370px;
-  margin: auto;
+  display: flex;
+  justify-content: center;
 }
 
 #content {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 60px;
+  margin-top: 3.5rem;
 }
 
 /* Upper */
 #up {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#image {
-  width: 120px;
-  border-radius: 50%;
-  box-shadow: 0px 0px 108px -11px rgba(0, 0, 0, 0.75);
 }
 
-#description {
-  margin-top: 15px;
-  font-size: 15px;
+#location {
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+  font-weight: 200;
 }
 
 /* Middle */
 #middle {
+  width: 300px;
   display: flex;
-  margin-top: 20px;
+  justify-content: space-around;
+  margin-top: 1rem;
 }
 
-#location {
-  font-size: 28px;
+#info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#image {
+  width: 140px;
+}
+#description {
+  margin-top: -1.5rem;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: 300;
 }
 
-#region {
-  font-size: 14px;
+#info1 {
+  display: flex;
+}
+#temp {
+  font-size: 7rem;
+  font-weight: 100;
+}
+#tempsign {
+  font-size: 40px;
+  font-weight: 300;
   margin-left: 5px;
   margin-top: 15px;
 }
@@ -62,11 +103,24 @@ body {
   width: 370px;
   display: flex;
   justify-content: space-around;
-  margin-top: 10px;
+  margin-top: 3.5rem;
 }
 
 .weatherInfo {
   margin: 0;
   display: flex;
   justify-content: center;
+}
+
+.widget {
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+/* Forcast */
+
+#forcastcontainer {
+  /* border: 1px solid black; */
+  height: 100px;
+  margin-top: 25px;
 }
