@@ -46,7 +46,7 @@ p::first-letter {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 10rem;
+  margin-top: 7rem;
 }
 
 /* Upper */
@@ -55,17 +55,16 @@ p::first-letter {
 }
 
 #location {
-  font-size: 3.5rem;
+  font-size: 5rem;
   letter-spacing: 2px;
   font-weight: 200;
 }
 
 /* Middle */
 #middle {
-  width: 300px;
+  width: 370px;
   display: flex;
   justify-content: space-around;
-  margin-top: 1rem;
 }
 
 #info {
@@ -75,11 +74,11 @@ p::first-letter {
   align-items: center;
 }
 #image {
-  width: 140px;
+  width: 12rem;
 }
 #description {
-  margin-top: -1.5rem;
-  font-size: 1.5rem;
+  margin-top: -2rem;
+  font-size: 2rem;
   letter-spacing: 1px;
   font-weight: 300;
 }
@@ -88,18 +87,18 @@ p::first-letter {
   display: flex;
 }
 #temp {
-  font-size: 7rem;
+  font-size: 10rem;
   font-weight: 100;
 }
 #tempsign {
-  font-size: 40px;
+  font-size: 5rem;
   font-weight: 300;
-  margin-left: 5px;
-  margin-top: 15px;
+  margin-left: 2px;
+  margin-top: 25px;
 }
 
-/* Down */
-#down {
+/* Down1 */
+#down1 {
   width: 370px;
   display: flex;
   justify-content: space-around;
@@ -107,18 +106,24 @@ p::first-letter {
 }
 
 .weatherInfo {
-  margin: 0;
   display: flex;
   justify-content: center;
+  font-size: 1.2rem;
 }
 
 .widget {
   letter-spacing: 1px;
   font-weight: 300;
 }
+/* Down2 */
+#down2 {
+  width: 370px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3.5rem;
+}
 
 /* Forcast */
-
 #forcastcontainer {
   /* border: 1px solid black; */
   height: 100px;

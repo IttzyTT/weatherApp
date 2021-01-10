@@ -21,14 +21,17 @@ async function getData() {
       `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=metric&lang=se&appid=3d8d2b2fa2b695d5367f55ec5c3000ab`
     );
     let data = await response.json();
+    console.log(data);
 
     let weatherHTML = '';
     weatherHTML += `<div id='content'>`;
 
+    // Top Location
     weatherHTML += `<div id='up'>`;
     weatherHTML += `<h2 id='location'>${data.name}</h2>`;
     weatherHTML += `</div>`;
 
+    // Middle icon and temp
     weatherHTML += `<div id='middle'>`;
     weatherHTML += `<div id="info">`;
     weatherHTML += `<img id="image" src="icons/${data.weather[0].icon}.png"</img>`;
@@ -36,27 +39,41 @@ async function getData() {
     weatherHTML += `</div>`;
     weatherHTML += `<div id="info1">`;
     weatherHTML += `<p id="temp">${data.main.temp.toFixed()}</p>`;
-    weatherHTML += `<p id="tempsign"> °</p>`;
+    weatherHTML += `<p id="tempsign">°</p>`;
     weatherHTML += `</div>`;
     weatherHTML += `</div>`;
 
-    weatherHTML += `<div id="down">`;
+    // Down section 1
+    weatherHTML += `<div id="down1">`;
     weatherHTML += `<div id="info2">`;
     weatherHTML += `<p id="feelslike" class="weatherInfo widget">Känns som</p>`;
-    weatherHTML += `<p id="feelsLike" class="weatherInfo">${data.main.feels_like.toFixed()} °C</p>`;
+    weatherHTML += `<p id="feelsLike" class="weatherInfo">${data.main.feels_like.toFixed()}°</p>`;
     weatherHTML += `</div>`;
-
     weatherHTML += `<div id="info3">`;
     weatherHTML += `<p id="windspeed" class="weatherInfo widget">Vind</p>`;
     weatherHTML += `<p id="windSpeed" class="weatherInfo">${data.wind.speed} m/s</p>`;
     weatherHTML += `</div>`;
-
     weatherHTML += `<div id="info4">`;
     weatherHTML += `<p id="cloudcover" class="weatherInfo widget">Lufttryck</p>`;
     weatherHTML += `<p id="cloudcover" class="weatherInfo">${data.main.pressure} hPa</p>`;
     weatherHTML += `</div>`;
     weatherHTML += `</div>`;
+    // Down section 2
+    weatherHTML += `<div id="down2">`;
+    weatherHTML += `<div id="info5">`;
+    weatherHTML += `<p id="cloudcover" class="weatherInfo widget">Lufttryck</p>`;
+    weatherHTML += `<p id="cloudcover" class="weatherInfo">${data.main.pressure} hPa</p>`;
+    weatherHTML += `</div>`;
+    weatherHTML += `<div id="info6">`;
+    weatherHTML += `<p id="cloudcover" class="weatherInfo widget">Lufttryck</p>`;
+    weatherHTML += `<p id="cloudcover" class="weatherInfo">${data.main.pressure} hPa</p>`;
+    weatherHTML += `</div>`;
+    weatherHTML += `<div id="info7">`;
+    weatherHTML += `<p id="cloudcover" class="weatherInfo widget">Lufttryck</p>`;
+    weatherHTML += `<p id="cloudcover" class="weatherInfo">${data.main.pressure} hPa</p>`;
+    weatherHTML += `</div>`;
 
+    weatherHTML += `</div>`;
     weatherHTML += `</div>`;
 
     container.innerHTML = weatherHTML;
