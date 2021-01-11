@@ -239,15 +239,15 @@ li {
 /* Responsive */
 
 /* desktop */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1201px) {
   #content {
-    height: 27vh;
+    height: 33vh;
   }
   #forcastcontainer {
     padding-top: 10px;
   }
   #up {
-    margin-top: 85px;
+    margin-top: 55px;
   }
   #down1 {
     margin-top: 30px;
@@ -256,7 +256,24 @@ li {
     margin-top: 5px;
   }
 }
-/* Ipad 1024 */
+/* Large screens*/
+@media only screen and (max-width: 1200px) {
+  #content {
+    height: 33vh;
+  }
+  #forcastcontainer {
+    padding-top: 10px;
+  }
+  #up {
+    margin-top: 65px;
+  }
+  #down1 {
+    margin-top: 30px;
+  }
+  #down2 {
+    margin-top: 5px;
+  }
+}
 @media only screen and (max-width: 1024px) {
   #content {
     height: 33vh;
@@ -274,8 +291,53 @@ li {
     margin-top: 5px;
   }
 }
-/* iphone-X */
-@media only screen and (max-height: 812px) {
+/* ipad */
+@media only screen and (max-width: 768px) {
+  #content {
+    height: 43vh;
+  }
+  #forcastcontainer {
+    height: 57vh;
+    position: absolute;
+    bottom: 0;
+  }
+  #up {
+    margin-top: 65px;
+  }
+  #down1 {
+    margin-top: 30px;
+  }
+  #down2 {
+    margin-top: 5px;
+  }
+}
+
+/* mobiler */
+@media only screen and (max-width: 480px) {
+  #content {
+    height: 43vh;
+  }
+  #forcastcontainer {
+    height: 47vh;
+    position: absolute;
+    bottom: 0;
+  }
+  #up {
+    margin-top: 13px;
+  }
+  #down1 {
+    margin-top: 10px;
+  }
+  #down2 {
+    margin-top: 5px;
+  }
+}
+/* mobiler */
+@media only screen and (height: 812px) {
+  #content {
+    height: 43vh;
+    margin-top: 50px;
+  }
   #forcastcontainer {
     height: 47vh;
     position: absolute;
@@ -283,48 +345,14 @@ li {
     padding: 2px;
   }
   #up {
-    margin-top: 65px;
+    margin-top: 13px;
   }
   #down1 {
-    margin-top: 30px;
+    margin-top: 10px;
     width: 95vw;
   }
   #down2 {
     margin-top: 5px;
     width: 95vw;
-  }
-}
-/* Iphone 6/7/8 plus */
-@media only screen and (max-height: 736px) {
-  #forcastcontainer {
-    height: 52vh;
-    position: absolute;
-    bottom: 0;
-  }
-  #up {
-    margin-top: 13px;
-  }
-  #down1 {
-    margin-top: 10px;
-  }
-  #down2 {
-    margin-top: 5px;
-  }
-}
-/* Iphone 6/7/8  */
-@media only screen and (max-height: 667px) {
-  #forcastcontainer {
-    height: 47%;
-    position: absolute;
-    bottom: 0;
-  }
-  #up {
-    margin-top: 13px;
-  }
-  #down1 {
-    margin-top: 10px;
-  }
-  #down2 {
-    margin-top: 5px;
   }
 }
