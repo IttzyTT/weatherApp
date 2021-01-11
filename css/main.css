@@ -38,6 +38,7 @@ body {
 p::first-letter {
   text-transform: capitalize;
 }
+
 li {
   list-style: none;
 }
@@ -47,7 +48,7 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 46%;
+  height: 50vh;
   padding-top: 4%;
 }
 
@@ -104,8 +105,8 @@ li {
 #tempsign {
   font-size: 4rem;
   font-weight: 300;
-  margin-left: 2px;
-  margin-top: 25px;
+  margin-left: 1px;
+  margin-top: 18px;
 }
 
 /* Down1 */
@@ -114,7 +115,7 @@ li {
   display: flex;
   justify-content: space-around;
   margin-top: 2rem;
-  border-top: 1px solid rgba(245, 245, 245, 0.401);
+  border-top: 1px solid rgba(189, 244, 255, 0.689);
   padding-top: 2px;
 }
 
@@ -135,32 +136,37 @@ li {
   display: flex;
   justify-content: space-around;
   margin-top: 1rem;
-  border-bottom: 1px solid rgba(245, 245, 245, 0.401);
+  border-bottom: 1px solid rgba(189, 244, 255, 0.689);
   padding-bottom: 2px;
 }
 
 /* Forcast */
 #forcastcontainer {
   display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  height: 49%;
-  overflow: auto;
+  justify-content: center;
+  margin-top: 3px;
+  height: 50vh;
   position: absolute;
-  bottom: 0;
-  width: 100%;
+  left: 0;
+  right: 0;
+  overflow: auto;
+}
+.foreCastList {
+  width: 370px;
 }
 
 #forcasts {
-  border-bottom: 1px solid rgb(171, 168, 168);
+  border-bottom: 1px solid rgba(138, 227, 229, 0.312);
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   padding: 0.6rem;
 }
 .forecastDateDiv {
+  width: 55px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+  margin-right: 10px;
 }
 .day1 {
   font-size: 2rem;
@@ -171,11 +177,19 @@ li {
   font-weight: 100;
   line-height: 1;
 }
+.forecastIconDiv {
+  width: 50px;
+  display: flex;
+  align-items: flex-start;
+  margin-right: 20px;
+}
 
 .forecastTemp {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-right: 19px;
+  width: 70px;
 }
 .forecastTempOpt {
   display: flex;
@@ -193,29 +207,124 @@ li {
   height: 40px;
 }
 
-.forecastInfo {
+.forecastWindDiv {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: space-between;
+  width: 50px;
 }
 .forecastWind {
   font-size: 0.9rem;
 }
 .forecastSunDiv {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  margin-left: 10px;
 }
 .forecastSunImg {
   height: 30px;
   margin-left: 5px;
 }
-.arrowUp {
+.arrowDiv {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .suntime {
   font-size: 0.9rem;
+  text-align: left;
 }
-.arrowDown {
-  display: flex;
+
+/* Responsive */
+
+/* desktop */
+@media only screen and (min-width: 1024px) {
+  #content {
+    height: 27vh;
+  }
+  #forcastcontainer {
+    padding-top: 10px;
+  }
+  #up {
+    margin-top: 85px;
+  }
+  #down1 {
+    margin-top: 30px;
+  }
+  #down2 {
+    margin-top: 5px;
+  }
+}
+/* Ipad 1024 */
+@media only screen and (max-width: 1024px) {
+  #content {
+    height: 33vh;
+  }
+  #forcastcontainer {
+    padding-top: 10px;
+  }
+  #up {
+    margin-top: 65px;
+  }
+  #down1 {
+    margin-top: 30px;
+  }
+  #down2 {
+    margin-top: 5px;
+  }
+}
+/* iphone-X */
+@media only screen and (max-height: 812px) {
+  #forcastcontainer {
+    height: 47vh;
+    position: absolute;
+    bottom: 0;
+    padding: 2px;
+  }
+  #up {
+    margin-top: 65px;
+  }
+  #down1 {
+    margin-top: 30px;
+    width: 95vw;
+  }
+  #down2 {
+    margin-top: 5px;
+    width: 95vw;
+  }
+}
+/* Iphone 6/7/8 plus */
+@media only screen and (max-height: 736px) {
+  #forcastcontainer {
+    height: 52vh;
+    position: absolute;
+    bottom: 0;
+  }
+  #up {
+    margin-top: 13px;
+  }
+  #down1 {
+    margin-top: 10px;
+  }
+  #down2 {
+    margin-top: 5px;
+  }
+}
+/* Iphone 6/7/8  */
+@media only screen and (max-height: 667px) {
+  #forcastcontainer {
+    height: 47%;
+    position: absolute;
+    bottom: 0;
+  }
+  #up {
+    margin-top: 13px;
+  }
+  #down1 {
+    margin-top: 10px;
+  }
+  #down2 {
+    margin-top: 5px;
+  }
 }

@@ -1,7 +1,7 @@
 const container = document.querySelector('#mainContainer');
 const errorTxt = document.querySelector('#error-txt');
 const forcastContainer = document.querySelector('#forcastcontainer');
-const forecastList = document.querySelector('foreCastList');
+const forecastList = document.querySelector('.foreCastList');
 let long;
 let lat;
 
@@ -106,7 +106,6 @@ async function getforecastData() {
       console.log(forecast);
 
       forecastHTML += `<li>`;
-
       forecastHTML += `<div id="forcasts">`;
       // datum och tid
       forecastHTML += `<div class="forecastDateDiv">`;
@@ -129,15 +128,13 @@ async function getforecastData() {
       forecastHTML += `<p class="temp2">L:${forecast.temp.min.toFixed()}°</p>`;
       forecastHTML += `</div>`;
       forecastHTML += `</div>`;
-      // vind och sol uppgång
-      forecastHTML += `<div class="forecastInfo">`;
       // vind
       forecastHTML += `<div class="forecastWindDiv">`;
       forecastHTML += `<p class="forecastWind">${forecast.wind_speed} m/s</p>`;
       forecastHTML += `</div>`;
       // Sol upp & ned
       forecastHTML += `<div class="forecastSunDiv">`;
-      forecastHTML += `<img class="forecastSunImg" src="icons/sunrise.png"></img>`;
+      forecastHTML += `<img class="forecastSunImg" src="/icons/sunrise.png"></img>`;
       forecastHTML += `<div class="arrowDiv">`;
       forecastHTML += `<div class="arrowUp">`;
       // tid uppgång
@@ -154,10 +151,9 @@ async function getforecastData() {
       forecastHTML += `</div>`;
       forecastHTML += `</div>`;
       forecastHTML += `</div>`;
-      forecastHTML += `</div>`;
       forecastHTML += `</li>`;
     }
-    forcastContainer.innerHTML = forecastHTML;
+    forecastList.innerHTML = forecastHTML;
   } catch (error) {}
   errorTxt.innerText = 'Somthing went wront, please try agian';
 }
