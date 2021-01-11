@@ -244,6 +244,7 @@ li {
     height: 30vh;
   }
   #forcastcontainer {
+    margin-top: 90px;
     padding-top: 10px;
   }
   #up {
@@ -262,6 +263,7 @@ li {
     height: 33vh;
   }
   #forcastcontainer {
+    margin-top: 100px;
     padding-top: 10px;
   }
   #up {
