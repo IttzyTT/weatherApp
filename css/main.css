@@ -241,10 +241,9 @@ li {
 /* desktop */
 @media only screen and (min-width: 1201px) {
   #content {
-    height: 33vh;
+    height: 30vh;
   }
   #forcastcontainer {
-    margin-top: 80px;
     padding-top: 10px;
   }
   #up {
