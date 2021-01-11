@@ -5,11 +5,14 @@
 }
 html {
   font-size: 12px;
+  height: 100vh;
+  width: 100vw;
 }
 
 body {
-  height: 100vh;
   background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
   color: whitesmoke;
   font-family: 'poppins', sans-serif;
 }
@@ -35,63 +38,71 @@ body {
 p::first-letter {
   text-transform: capitalize;
 }
-
-/* Main */
-#mainContainer {
-  display: flex;
-  justify-content: center;
+li {
+  list-style: none;
 }
 
+/* Main */
 #content {
   display: flex;
-  align-items: center;
   flex-direction: column;
-  margin-top: 7rem;
+  align-items: center;
+  height: 46%;
+  padding-top: 4%;
 }
 
 /* Upper */
 #up {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #location {
-  font-size: 5rem;
+  font-size: 4.5rem;
   letter-spacing: 2px;
-  font-weight: 200;
+  line-height: 55px;
+  font-weight: 100;
+}
+
+#date {
+  font-size: 1.5rem;
+  font-weight: 100;
 }
 
 /* Middle */
 #middle {
-  width: 370px;
+  width: 163px;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
 }
 
 #info {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 #image {
-  width: 12rem;
+  height: 11rem;
+  margin-right: 3rem;
 }
 #description {
-  margin-top: -2rem;
-  font-size: 2rem;
+  margin-top: -2.8rem;
+  font-size: 1.5rem;
   letter-spacing: 1px;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 #info1 {
   display: flex;
+
+  align-self: flex-start;
 }
 #temp {
-  font-size: 10rem;
+  font-size: 7.5rem;
   font-weight: 100;
 }
 #tempsign {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 300;
   margin-left: 2px;
   margin-top: 25px;
@@ -102,30 +113,109 @@ p::first-letter {
   width: 370px;
   display: flex;
   justify-content: space-around;
-  margin-top: 3.5rem;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(245, 245, 245, 0.401);
+  padding-top: 2px;
 }
 
 .weatherInfo {
   display: flex;
   justify-content: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .widget {
+  font-size: 1rem;
   letter-spacing: 1px;
-  font-weight: 300;
+  font-weight: 200;
 }
 /* Down2 */
 #down2 {
   width: 370px;
   display: flex;
   justify-content: space-around;
-  margin-top: 3.5rem;
+  margin-top: 1rem;
+  border-bottom: 1px solid rgba(245, 245, 245, 0.401);
+  padding-bottom: 2px;
 }
 
 /* Forcast */
 #forcastcontainer {
-  /* border: 1px solid black; */
-  height: 100px;
-  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 49%;
+  overflow: auto;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+#forcasts {
+  border-bottom: 1px solid rgb(171, 168, 168);
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem;
+}
+.forecastDateDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.day1 {
+  font-size: 2rem;
+  font-weight: 200;
+}
+.day2 {
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1;
+}
+
+.forecastTemp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.forecastTempOpt {
+  display: flex;
+}
+.temp2 {
+  letter-spacing: 1px;
+  margin-right: 3px;
+}
+
+.forecastIconDiv {
+  display: flex;
+  justify-content: center;
+}
+.forecastIcon {
+  height: 40px;
+}
+
+.forecastInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.forecastWind {
+  font-size: 0.9rem;
+}
+.forecastSunDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.forecastSunImg {
+  height: 30px;
+  margin-left: 5px;
+}
+.arrowUp {
+  display: flex;
+}
+.suntime {
+  font-size: 0.9rem;
+}
+.arrowDown {
+  display: flex;
 }
