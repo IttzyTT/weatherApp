@@ -40,7 +40,7 @@ async function getData() {
     // Middle icon and temp
     weatherHTML += `<div id='middle'>`;
     weatherHTML += `<div id="info">`;
-    weatherHTML += `<img id="image" src="icons/${data.weather[0].icon}.png"></img>`;
+    weatherHTML += `<img id="image" src="${data.weather[0].icon}.png"></img>`;
     weatherHTML += `<p id="temp">${data.main.temp.toFixed()}</p>`;
     weatherHTML += `<p id="tempsign">°</p>`;
 
@@ -118,7 +118,7 @@ async function getforecastData() {
       forecastHTML += `</div>`;
       // Icon
       forecastHTML += `<div class="forecastIconDiv">`;
-      forecastHTML += `<img class="forecastIcon" src="icons/${forecast.weather[0].icon}.png"></img>`;
+      forecastHTML += `<img class="forecastIcon" src="${forecast.weather[0].icon}.png"></img>`;
       forecastHTML += `</div>`;
       // Temperatur
       forecastHTML += `<div class="forecastTemp">`;
