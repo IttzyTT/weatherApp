@@ -164,6 +164,7 @@ li {
 }
 .forecastDateDiv {
   width: 55px;
+  height: 50px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -179,6 +180,7 @@ li {
   line-height: 1;
 }
 .forecastIconDiv {
+  height: 50px;
   width: 50px;
   display: flex;
   align-items: flex-start;
@@ -191,6 +193,7 @@ li {
   align-items: center;
   margin-right: 19px;
   width: 70px;
+  height: 50px;
 }
 .forecastTempOpt {
   display: flex;
@@ -203,6 +206,7 @@ li {
 .forecastIconDiv {
   display: flex;
   justify-content: center;
+  height: 50px;
 }
 .forecastIcon {
   height: 40px;
@@ -213,6 +217,7 @@ li {
   justify-content: flex-start;
   align-items: center;
   width: 50px;
+  height: 50px;
 }
 .forecastWind {
   font-size: 0.9rem;
@@ -221,7 +226,8 @@ li {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-left: 10px;
+  margin-left: 7px;
+  height: 50px;
 }
 .forecastSunImg {
   height: 30px;
@@ -231,7 +237,7 @@ li {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 40px;
+  width: 42px;
 }
 .suntime {
   font-size: 0.9rem;
