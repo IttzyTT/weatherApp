@@ -231,6 +231,7 @@ li {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 40px;
 }
 .suntime {
   font-size: 0.9rem;
