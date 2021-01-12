@@ -48,7 +48,6 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 50vh;
   padding-top: 4%;
 }
 
@@ -98,6 +97,7 @@ li {
   font-weight: 200;
   width: 300px;
   text-align: center;
+  margin-top: 8px;
 }
 
 #temp {
@@ -145,12 +145,6 @@ li {
 #forcastcontainer {
   display: flex;
   justify-content: center;
-  margin-top: 3px;
-  height: 50vh;
-  position: absolute;
-  left: 0;
-  right: 0;
-  overflow: auto;
 }
 .foreCastList {
   width: 370px;
@@ -246,87 +240,18 @@ li {
 
 /* Responsive */
 
-/* desktop */
-@media only screen and (min-width: 1201px) {
-  #content {
-    height: 30vh;
-  }
-  #forcastcontainer {
-    padding-top: 10px;
-  }
-  #up {
-    margin-top: 5px;
-  }
-  #down1 {
-    margin-top: 30px;
-  }
-  #down2 {
-    margin-top: 5px;
-  }
-}
-/* Large screens*/
-@media only screen and (max-width: 1200px) {
-  #content {
-    height: 33vh;
-  }
-
-  #up {
-    margin-top: 65px;
-  }
-  #down1 {
-    margin-top: 20px;
-  }
-  #down2 {
-    margin-top: 5px;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  #content {
-    height: 33vh;
-  }
-  #forcastcontainer {
-    padding-top: 10px;
-  }
-  #up {
-    margin-top: 65px;
-  }
-  #down1 {
-    margin-top: 30px;
-  }
-  #down2 {
-    margin-top: 5px;
-  }
-}
-/* ipad */
-@media only screen and (max-width: 768px) {
-  #content {
-    height: 43vh;
-  }
-  #forcastcontainer {
-    height: 57vh;
-    position: absolute;
-    bottom: 0;
-  }
-  #up {
-    margin-top: 65px;
-  }
-  #down1 {
-    margin-top: 30px;
-  }
-  #down2 {
-    margin-top: 5px;
-  }
-}
-
 /* mobiler */
 @media only screen and (max-width: 480px) {
   #content {
-    height: 43vh;
+    height: 50vh;
   }
   #forcastcontainer {
     height: 47vh;
     position: absolute;
     bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: auto;
   }
   #up {
     margin-top: 13px;
