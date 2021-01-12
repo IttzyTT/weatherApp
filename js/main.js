@@ -134,7 +134,7 @@ async function getforecastData() {
       forecastHTML += `</div>`;
       // Sol upp & ned
       forecastHTML += `<div class="forecastSunDiv">`;
-      forecastHTML += `<img class="forecastSunImg" src="/icons/sunrise.png"></img>`;
+      forecastHTML += `<img class="forecastSunImg"  src="sunrise.png" alt="sunrise"></img>`;
       forecastHTML += `<div class="arrowDiv">`;
       forecastHTML += `<div class="arrowUp">`;
       // tid uppgång
