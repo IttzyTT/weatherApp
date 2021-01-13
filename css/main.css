@@ -85,8 +85,6 @@ li {
 }
 #tempiconDiv {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #image {
@@ -103,17 +101,19 @@ li {
   font-weight: 200;
   width: 300px;
   text-align: center;
-  margin-bottom: 10px;
+  margin-top: -8px;
+  margin-bottom: 15px;
 }
 
 #temp {
-  font-size: 5rem;
+  font-size: 4.5rem;
   font-weight: 100;
+  margin-top: 10px;
 }
 #tempsign {
   font-size: 2.6rem;
   font-weight: 300;
-  margin-top: 10px;
+  margin-top: 18px;
 }
 
 /* Down1 */
