@@ -59,10 +59,12 @@ li {
 }
 
 #location {
-  font-size: 4.5rem;
+  font-size: 3.8rem;
   letter-spacing: 2px;
-  line-height: 55px;
+  line-height: 45px;
   font-weight: 100;
+  width: 370px;
+  text-align: center;
 }
 
 #date {
@@ -174,6 +176,7 @@ li {
   font-weight: 100;
   line-height: 1;
 }
+
 .forecastIconDiv {
   height: 50px;
   width: 50px;

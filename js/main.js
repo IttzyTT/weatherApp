@@ -103,18 +103,23 @@ async function getforecastData() {
 
     let forecastHTML = '';
     for (let forecast of forecasts) {
-      console.log(forecast);
+      let date = new Date(forecast.dt * 1000);
+      let weekDay = date.toLocaleDateString('sv-SE', { weekday: 'short' });
+      let day = date.getDate();
+      let month = date
+        .toLocaleString('default', { month: 'short' })
+        .slice(0, 3);
+
+      console.log(weekDay);
 
       forecastHTML += `<li>`;
       forecastHTML += `<div id="forcasts">`;
       // datum och tid
       forecastHTML += `<div class="forecastDateDiv">`;
-      forecastHTML += `<h3 class="day1">${new Date(forecast.dt * 1000)
-        .toDateString()
-        .slice(0, 3)}</h3>`;
-      forecastHTML += `<p class="day2">${new Date(forecast.dt * 1000)
-        .toDateString()
-        .slice(4, 11)}</p>`;
+      forecastHTML += `<h3 class="day1">${weekDay}</h3>`;
+      forecastHTML += `<p class="day2">${day} ${
+        month.charAt(0).toUpperCase() + month.slice(1)
+      }</p>`;
       forecastHTML += `</div>`;
       // Icon
       forecastHTML += `<div class="forecastIconDiv">`;
