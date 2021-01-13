@@ -59,7 +59,7 @@ li {
 }
 
 #location {
-  font-size: 3.5rem;
+  font-size: 3rem;
   letter-spacing: 2px;
   line-height: 45px;
   font-weight: 100;
@@ -87,7 +87,6 @@ li {
 #image {
   height: 7rem;
   margin-right: 2rem;
-  margin-top: 4px;
 }
 
 #info1 {
@@ -104,7 +103,7 @@ li {
 }
 
 #temp {
-  font-size: 5.5rem;
+  font-size: 5rem;
   font-weight: 100;
 }
 #tempsign {
@@ -243,7 +242,6 @@ li {
 }
 
 /* Responsive */
-
 /* mobiler */
 
 @media only screen and (max-width: 480px) {
