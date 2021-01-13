@@ -82,9 +82,13 @@ li {
 
 #info {
   display: flex;
+}
+#tempiconDiv {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
+
 #image {
   height: 7rem;
   margin-right: 2rem;

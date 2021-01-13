@@ -40,11 +40,13 @@ async function getData() {
     // Middle icon and temp
     weatherHTML += `<div id='middle'>`;
     weatherHTML += `<div id="info">`;
+    weatherHTML += `<div id="tempiconDiv">`;
     weatherHTML += `<img id="image" src="${data.weather[0].icon}.png"></img>`;
     weatherHTML += `<p id="temp">${data.main.temp.toFixed()}</p>`;
-    weatherHTML += `<p id="tempsign">°</p>`;
-
     weatherHTML += `</div>`;
+    weatherHTML += `<p id="tempsign">°</p>`;
+    weatherHTML += `</div>`;
+
     weatherHTML += `<div id="info1">`;
     weatherHTML += `<p id='description'>${data.weather[0].description}</p>`;
     weatherHTML += `</div>`;
