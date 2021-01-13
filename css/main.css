@@ -109,12 +109,12 @@ li {
 #temp {
   font-size: 5rem;
   font-weight: 100;
+  height: 84px;
 }
 #tempsign {
   font-size: 2.6rem;
   font-weight: 300;
-  margin-left: 1px;
-  margin-top: 13px;
+  margin-top: 10px;
 }
 
 /* Down1 */
